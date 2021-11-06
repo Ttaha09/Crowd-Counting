@@ -77,7 +77,7 @@ fig, ax = plt.subplots()
 if uploaded_file is not None:
     img = transform(Image.open(uploaded_file).convert('RGB')).to(device)
     st.caption("""Your Image """)
-    st.image(img, use_column_width=True)
+    st.image(Image.open(uploaded_file), use_column_width=True)
     output = model(img[None])
     st.write("Predicted Count : "+str(int(m(output).detach().cpu().sum().numpy())))
     temp = np.asarray(output.detach().cpu().reshape(output.detach().cpu().shape[2],output.detach().cpu().shape[3]))
