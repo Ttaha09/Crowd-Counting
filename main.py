@@ -71,6 +71,8 @@ transform=transforms.Compose([
                   ])
 
 uploaded_file = st.file_uploader('Select an Image', ['png', 'jpg'])
+fig, ax = plt.subplots()
+
 
 if uploaded_file is not None:
     img = transform(Image.open(uploaded_file).convert('RGB')).to(device)
@@ -78,4 +80,5 @@ if uploaded_file is not None:
     st.write("Predicted Count : "+str(int(m(output).detach().cpu().sum().numpy())))
     temp = np.asarray(output.detach().cpu().reshape(output.detach().cpu().shape[2],output.detach().cpu().shape[3]))
     plt.imshow(temp,cmap = c.jet)
-    st.pyplot()
+    ax.imshow(temp,cmap = c.jet)
+    st.pyplot(fig)
