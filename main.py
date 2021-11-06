@@ -62,7 +62,7 @@ m = nn.MaxPool2d(2, stride=2)
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 model = CSRNet().to(device)
 PATH = "./Model/crowd-counting.pth"
-model.load_state_dict(torch.load(PATH))
+model.load_state_dict(torch.load(PATH),map_location=torch.device('cpu'))
 
 transform=transforms.Compose([
                       transforms.ToTensor(),transforms.Normalize(
