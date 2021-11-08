@@ -8,6 +8,12 @@ heads of all the people present in the image.
 
 <p align="center"><img src="Images/Crowd-Counting.PNG" width=676 height=450> </p>
 
+### Model Training:
+
+<p>
+  <a href="https://colab.research.google.com/drive/1HHfP_n-8-rBbTNdbVlBd9P0fOj1hBJes#scrollTo=c45r0B4N8xMR" rel="nofollow noreferrer">
+    <img src="Images/icron-colab.png" alt="kaggle"> Model Training
+ </p>
 
 
 
