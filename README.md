@@ -11,8 +11,8 @@ heads of all the people present in the image.
 ### Model Training:
 
 <p>
-  <a href="https://colab.research.google.com/drive/1HHfP_n-8-rBbTNdbVlBd9P0fOj1hBJes#scrollTo=c45r0B4N8xMR" rel="nofollow noreferrer">
-    <img src="Images/icron-colab.png" alt="kaggle"> Model Training
+  <a href="https://github.com/Ttaha09/Crowd-Counting/blob/main/Model/crowd_counting.ipynb" rel="nofollow noreferrer">
+    Model Training
  </p>
 
 
